@@ -3,7 +3,13 @@ const { signup, login } = require('../controllers/UserControllers');
 const { auth, isAdmin, isAgent, isTourist } = require('../middlewares/auth');
 const router = express.Router();
 
-router.post('/signup',auth, signup);
-router.post('/login', auth, isAdmin, isAgent, isTourist, login);
+router.post('/signup', signup);
+router.post('/login',  login);
+router.get('/test', auth, (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "welcome to test route"
+    })
+});
 
 module.exports = router

@@ -33,7 +33,7 @@ const auth =(req, res, next)=>{
     } 
     catch (error) {
         return res.status(401).json({
-            success:flase,
+            success: false,
             message : "Something went wrong while verfiying the token."
         })
     }
