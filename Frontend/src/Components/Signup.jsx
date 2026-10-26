@@ -6,7 +6,8 @@ import image from '../assets/signup.png'
 import axios from "axios"
 import { Link } from 'react-router-dom';
 import or_small from "../assets/or.png";
-import or_big from "../assets/or1.png";
+
+
   
 const Signup = () => {
 
