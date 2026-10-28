@@ -4,8 +4,39 @@ import { FaArrowRight } from "react-icons/fa";
 import mountain from "../assets/Mountain.png";
 import temple from "../assets/temple.png";
 import lake from "../assets/lake.png";
+import dharamsala from "../assets/dharamsala.png";
+import kasol from "../assets/kasol.png";
+import rishikesh from "../assets/rishikesh.png";
+import { CiHeart } from "react-icons/ci";
 
 const Home = () => {
+
+  const popular_Escape = [
+    {
+      img: dharamsala,
+      localtion: "Dharamsala",
+      detail: "3 Nights • 4 Days",
+      rating: "4.8 (980)",
+      prices: "₹ 8,999",
+      start: "Starting from"
+    },
+    {
+      img: kasol,
+      localtion: "Kasol",
+      detail: "2 Nights • 3 Days",
+      rating: "4.7 (1.2k)",
+      prices: "₹ 6,499",
+      start: "Starting from"
+    },
+    {
+      img: rishikesh,
+      localtion: "Rishikesh",
+      detail: "2 Nights • 3 Days",
+      rating: "4.6 (1.1k)",
+      prices: "₹ 5,999",
+      start: "Starting from"
+    }
+  ]
 
   const escape_Data = [
     {
@@ -78,6 +109,45 @@ const Home = () => {
 
       </div>
 
+      <div className="pb-20 px-20 bg-[rgb(242,237,229)] flex flex-col justify-center items-start  gap-2">
+        <h1 className="text-[#153c65] text-3xl font-bold">Popular Escape</h1>
+        <p className="text-[#6B7280] text-sm ">Handpicked jounerys loved by travellers like you.</p>
+
+        <div className="flex justify-between items-center gap-10 ">
+          {
+            popular_Escape.map((items, index) =>
+              <div className="hover:scale-105 transition-all">
+                {/* bg image */}
+                <div className="flex flex-row h-60 w-100 bg-center bg-cover bg-no-repeat justify-between items-start px-3 py-3 rounded-t-2xl border-b-1 border-[#6B7280]"
+                style={{ backgroundImage: `url(${items.img})`  }}
+                >
+                  <h1 className="text-[#F2EDE5] bg-gray-100/50 px-3 py-1 rounded-full">{items.localtion}</h1>
+                  <CiHeart size={25} color="#111111" className="cursor-pointer hover:scale-130 transition-all " />
+                </div>
+
+                {/* price and deatils */}
+                <div className="flex text-[#6B7280] justify-between items-center h-20 bg-white rounded-b-2xl px-3 py-1">
+                  {/* location */}
+                  <div className="flex w-70 flex-col justify-start items-start gap-3 ">
+                    <h1 className="text-[#153c65] text-1xl font-bold">{items.localtion}</h1>
+                    <div className="flex  justify-evenly gap-19 items-start">
+                      <p className="text-black">{items.detail}</p>
+                      <p>{items.rating}</p>
+
+                    </div>
+                  </div>
+                  {/* price */}
+                  <div className="flex flex-col gap-2 justify-between border-l-1 border-[#6B7280] px-2 items-start ">
+                    <p className="text-black  text-lg">{items.start}</p>
+                    <p className="text-[#153c65]">{items.prices}</p>
+                  </div>
+                </div>
+              </div>
+            )
+          }
+        </div>
+
+      </div>
 
     </div>
   )
