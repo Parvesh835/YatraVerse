@@ -8,8 +8,13 @@ import dharamsala from "../assets/dharamsala.png";
 import kasol from "../assets/kasol.png";
 import rishikesh from "../assets/rishikesh.png";
 import { CiHeart } from "react-icons/ci";
+import bgimage from "../assets/Bgimage1.png"
+import sumAndMountain from "../assets/Mountains_and_sun.png";
+import montainsAndForest from '../assets/montains_and_forest.png';
+
 
 const Home = () => {
+
 
   const popular_Escape = [
     {
@@ -59,7 +64,7 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className="bg-[#F2EDE5]">
   <div
       className="relative h-[450px] bg-cover bg-center"
       style={{ backgroundImage: `url(${mainbg})` , backgroundSize: "100% 100%" }}
@@ -145,6 +150,26 @@ const Home = () => {
               </div>
             )
           }
+        </div>
+
+      </div>
+
+      <div className="flex px-20 pb-20 items-center justify-center bg-right"      >
+        <div className="h-25 bg-gradient-to-r from-[#153c65]/95 via-[#525E6B] to-[#AoB4CO] rounded-3xl w-full flex  justify-start items-center px-5 gap-5 bg-right "        >
+          <div>
+            <img src={sumAndMountain} className="h-25" />
+          </div>
+          <div className="flex flex-col justify-center  items-start gap-2">
+          <h1 className="text-xl text-white">Your next story is waiting.</h1>
+            <p className="text-sm text-white">Let the mountains, river and temples call you away.</p>
+          </div>
+          <div>
+            <button className=" rounded-xl bg-[#3B82F6] px-3 py-1.5 ml-100 text-white">Plan your escape</button>
+          </div>
+          <div>
+            <img src={montainsAndForest} alt="" className="h-40 mr-0 my-0 pr-0 py-0" />
+          </div>
+
         </div>
 
       </div>
