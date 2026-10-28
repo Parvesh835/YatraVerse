@@ -64,13 +64,13 @@ const Home = () => {
 
 
   return (
-    <div className="bg-[#F2EDE5]">
-  <div
+  <div className="bg-[#F2EDE5]">
+    <div
       className="relative h-[450px] bg-cover bg-center"
       style={{ backgroundImage: `url(${mainbg})` , backgroundSize: "100% 100%" }}
->
-  {/* Gradient Overlay */}
-  <div className="absolute inset-0 bg-gradient-to-r from-[#06233d]/95 via-[#06233d]/60 to-transparent"></div>
+  >
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#06233d]/95 via-[#06233d]/60 to-transparent"></div>
 
   {/* Content */}
   <div className="relative z-10 px-16 py-10 text-white flex flex-col gap-1 justify-center  w-200">
@@ -96,14 +96,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="py-20 px-20 bg-[#F2EDE5] flex flex-col justify-center items-start  gap-2">
-        <h1 className="text-[#153c65] text-3xl font-bold">Find Your Escape</h1>
-        <p className="text-[#6B7280] text-sm ">Journary for every kind of soul.</p>
+      <div className="py-20 px-20 bg-[#F2EDE5] flex flex-col max-md:justify-center max-md:items-center justify-center items-start  gap-2">
+        <h1 className="text-[#153c65] text-3xl font-bold ">Find Your Escape</h1>
+        <p className="text-[#6B7280] text-sm  ">Journary for every kind of soul.</p>
 
-        <div className="flex justify-between items-center gap-10 ">
+        <div className="flex justify-between max-md:flex-col max-md:justify-center max-md:items-center items-center gap-10 ">
           {
             escape_Data.map((items, index) =>
-              <div className=" w-100 h-70 flex flex-col-reverse justify-start py-3 items-start text-[#F2EDE5] gap-2 text-start rounded-2xl hover:scale-105 transition-all bg-center bg-cover bg-no-repeat  " key={index}
+              <div className=" w-100 h-70 flex flex-col-reverse justify-start  py-3 items-start text-[#F2EDE5] gap-3 text-start rounded-2xl hover:scale-105 transition-all bg-center bg-cover bg-no-repeat  " key={index}
               style={{ backgroundImage: `url(${items.img})` , backgroundSize: "100% 100%" }}>
                 <p className="w-60 px-3">{items.detail}</p>
                 <h1 className="font-bold text-2xl px-3">{items.title}</h1>
@@ -114,11 +114,11 @@ const Home = () => {
 
       </div>
 
-      <div className="pb-20 px-20 bg-[rgb(242,237,229)] flex flex-col justify-center items-start  gap-2">
+      <div className="pb-20 px-20 bg-[rgb(242,237,229)] flex flex-col justify-center items-start max-md:justify-center max-md:items-center  gap-2">
         <h1 className="text-[#153c65] text-3xl font-bold">Popular Escape</h1>
         <p className="text-[#6B7280] text-sm ">Handpicked jounerys loved by travellers like you.</p>
 
-        <div className="flex justify-between items-center gap-10 ">
+        <div className="flex justify-between max-md:flex-col items-center gap-10 ">
           {
             popular_Escape.map((items, index) =>
               <div className="hover:scale-105 transition-all">
@@ -131,11 +131,11 @@ const Home = () => {
                 </div>
 
                 {/* price and deatils */}
-                <div className="flex text-[#6B7280] justify-between items-center h-20 bg-white rounded-b-2xl px-3 py-1">
+                <div className="flex text-[#6B7280] justify-between items-center w-100 h-20 bg-white rounded-b-2xl px-3 py-1">
                   {/* location */}
-                  <div className="flex w-70 flex-col justify-start items-start gap-3 ">
+                  <div className="flex w-60 flex-col justify-start items-start gap-3 ">
                     <h1 className="text-[#153c65] text-1xl font-bold">{items.localtion}</h1>
-                    <div className="flex  justify-evenly gap-19 items-start">
+                    <div className="flex  justify-evenly gap-10 items-start">
                       <p className="text-black">{items.detail}</p>
                       <p>{items.rating}</p>
 
@@ -164,7 +164,7 @@ const Home = () => {
             <p className="text-sm text-white">Let the mountains, river and temples call you away.</p>
           </div>
           <div>
-            <button className=" rounded-xl bg-[#3B82F6] px-3 py-1.5 ml-100 text-white">Plan your escape</button>
+            <button className=" rounded-xl bg-[#3B82F6] px-3 py-1.5 ml-100 text-white cursor-pointer hover:scale-101">Plan your escape</button>
           </div>
           <div>
             <img src={montainsAndForest} alt="" className="h-40 mr-0 my-0 pr-0 py-0" />

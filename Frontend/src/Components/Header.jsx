@@ -31,7 +31,7 @@ const Header = () => {
       {/* signup/Login button */}
       <div className='flex gap-3 text-center items-center justify-center text-base '>
         <p className='max-sm:hidden'>Signup</p>
-        <NavLink to="/signup"><button className='bg-[#3B82F6] px-5 py-3 rounded-xl font-semibold text-white cursor-pointer max-sm:px-3 max-sm:py-2 '>Get Started</button></NavLink>
+        <NavLink to="/signup"><button className='bg-[#3B82F6] px-5 py-3 rounded-xl font-semibold text-white cursor-pointer max-sm:px-3 max-sm:py-2 hover:scale-103 '>Get Started</button></NavLink>
         <img className='h-[50px] w-[50px] cursor-pointer sm:hidden' src={Responsive} alt="Responsive Navigation"
         onClick={()=> setIsOpen(true)}/>
       </div>
