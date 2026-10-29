@@ -8,7 +8,6 @@ import dharamsala from "../assets/dharamsala.png";
 import kasol from "../assets/kasol.png";
 import rishikesh from "../assets/rishikesh.png";
 import { CiHeart } from "react-icons/ci";
-import bgimage from "../assets/Bgimage1.png"
 import sumAndMountain from "../assets/Mountains_and_sun.png";
 import montainsAndForest from '../assets/montains_and_forest.png';
 
@@ -81,17 +80,17 @@ const Home = () => {
       Escape the Hectic Life.
     </h1>
 
-    <p className="mt-4 text-3xl">
+    <p className="mt-4 text-3xl font-fontFamily">
       Your next journey starts here.
     </p>
     
-        <p className="mt-4 text-xl w-130">
+        <p className="mt-4 text-xl w-130 font-fontFamily">
           Weakend adventures, mountains escapes or soulful getways - discover destinatioms that refresh your mind, body and soul.  
        </p>
 
           <div className="flex gap-5  items-center">
-              <button className="mt-6 rounded-lg bg-[#3B82F6] w-50 px-6 py-3 cursor-pointer">Explore Packages</button>
-              <button className=" mt-6 flex gap-2 justify-center items-center underline cursor-pointer">Discover Destinations       <FaArrowRight /></button>
+              <button className="mt-6 rounded-lg bg-[#3B82F6] w-50 px-6 py-3 cursor-pointer font-mono">Explore Packages</button>
+              <button className=" mt-6 flex gap-2 justify-center items-center underline cursor-pointer font-mono">Discover Destinations       <FaArrowRight /></button>
          </div>
         </div>
       </div>
@@ -160,8 +159,8 @@ const Home = () => {
             <img src={sumAndMountain} className="h-25" />
           </div>
           <div className="flex flex-col justify-center  items-start gap-2">
-          <h1 className="text-xl text-white">Your next story is waiting.</h1>
-            <p className="text-sm text-white">Let the mountains, river and temples call you away.</p>
+          <h1 className="text-xl text-white font-fontFamily">Your next story is waiting.</h1>
+            <p className="text-sm text-white font-fontFamily">Let the mountains, river and temples call you away.</p>
           </div>
           <div>
             <button className=" rounded-xl bg-[#3B82F6] px-3 py-1.5 ml-100 text-white cursor-pointer hover:scale-101">Plan your escape</button>
