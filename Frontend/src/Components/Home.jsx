@@ -74,30 +74,30 @@ const Home = () => {
   {/* Content */}
   <div className="relative z-10 px-16 py-10 text-white flex flex-col gap-1 justify-center  w-200">
     
-    <p className="bg-[#8FA3B4]/50  px-3 py-1.5 rounded-3xl text-white flex gap-3 justify-start items-center w-60 mb-5  "><FaRegCompass size={20} color="#3B82F6" /> Find your kind of escape</p>
+    <p className="bg-[#8FA3B4]/50   px-3 py-1.5 max-md:px-2 max-md:py-1 max-md:text-sm max-md:w-50 rounded-3xl text-white flex gap-3 justify-start items-center w-60 mb-5  "><FaRegCompass size={20} color="#3B82F6" /> Find your kind of escape</p>
     
-    <h1 className="text-6xl font-bold font-fontFamily">
+    <h1 className="text-6xl max-md:text-5xl font-bold font-fontFamily">
       Escape the Hectic Life.
     </h1>
 
-    <p className="mt-4 text-3xl font-fontFamily">
+    <p className="mt-4 text-3xl  max-md:text-2xl font-fontFamily">
       Your next journey starts here.
     </p>
     
-        <p className="mt-4 text-xl w-130 font-fontFamily">
+        <p className="mt-4 text-xl max-md:text-lg max-md:w-90 w-130 font-fontFamily">
           Weakend adventures, mountains escapes or soulful getways - discover destinatioms that refresh your mind, body and soul.  
        </p>
 
           <div className="flex gap-5  items-center">
-              <button className="mt-6 rounded-lg bg-[#3B82F6] w-50 px-6 py-3 cursor-pointer font-mono">Explore Packages</button>
-              <button className=" mt-6 flex gap-2 justify-center items-center underline cursor-pointer font-mono">Discover Destinations       <FaArrowRight /></button>
+              <button className="mt-6 rounded-lg bg-[#3B82F6] w-50 px-6 py-3 cursor-pointer max-md:px-3 max-md:p-1.5 max-md:w-35 max-md:text-sm font-mono">Explore Packages</button>
+              <button className=" mt-6 flex gap-2 justify-center items-center underline cursor-pointer max-md:text-sm font-mono">Discover Destinations       <FaArrowRight /></button>
          </div>
         </div>
       </div>
 
       <div className="py-20 px-20 bg-[#F2EDE5] flex flex-col max-md:justify-center max-md:items-center justify-center items-start  gap-2">
         <h1 className="text-[#153c65] text-3xl font-bold ">Find Your Escape</h1>
-        <p className="text-[#6B7280] text-sm  ">Journary for every kind of soul.</p>
+        <p className="text-[#6B7280] text-sm max-md:mb-10  ">Journary for every kind of soul.</p>
 
         <div className="flex justify-between max-md:flex-col max-md:justify-center max-md:items-center items-center gap-10 ">
           {
@@ -113,14 +113,14 @@ const Home = () => {
 
       </div>
 
-      <div className="pb-20 px-20 bg-[rgb(242,237,229)] flex flex-col justify-center items-start max-md:justify-center max-md:items-center  gap-2">
-        <h1 className="text-[#153c65] text-3xl font-bold">Popular Escape</h1>
-        <p className="text-[#6B7280] text-sm ">Handpicked jounerys loved by travellers like you.</p>
+      <div  className="pb-20 px-20 bg-[#f2ede5] flex flex-col justify-center items-start max-md:justify-center max-md:items-center gap-2">
+          <h1 className="text-[#153c65] text-3xl font-bold">Popular Escape</h1>
+          <p className="text-[#6B7280] text-sm max-md:mb-10 ">Handpicked jounerys loved by travellers like you.</p>
 
         <div className="flex justify-between max-md:flex-col items-center gap-10 ">
           {
             popular_Escape.map((items, index) =>
-              <div className="hover:scale-105 transition-all">
+              <div className="hover:scale-105 transition-all" key={index}>
                 {/* bg image */}
                 <div className="flex flex-row h-60 w-100 bg-center bg-cover bg-no-repeat justify-between items-start px-3 py-3 rounded-t-2xl border-b-1 border-[#6B7280]"
                 style={{ backgroundImage: `url(${items.img})`  }}
