@@ -12,6 +12,9 @@ import { FaYoutube, FaFacebookF } from "react-icons/fa";
 
 
 const Footer = () => {
+
+  const destination = ["Himachal Pardesh", "Uttarakhand", "Kashmir", "Ladakh", "Northeast India", "More Destinations"];
+
   return (
     <div
       className=' relative flex flex-col justify-center items-center gap-10   bg-[#06233d]/90'
@@ -56,6 +59,7 @@ const Footer = () => {
       {/* Second Section */}
       <div className='flex justify-between items-center gap-10'>
 
+        {/* second section's First section */}
         <div className='flex flex-col justify-between items-center gap-3 w-60 '>
 
           {/* logo */}
@@ -67,16 +71,27 @@ const Footer = () => {
 
           <div className='flex justify-between items-center gap-3'>
 
-            <IoLogoInstagram size={25} color='ffffff' />
-            <FaXTwitter size={25} color='ffffff'  />
-            <FaYoutube size={25} color='FFffff'  />
-            <FaFacebookF size={25} color='ffffff' />
+            <IoLogoInstagram size={25} color='ffffff'/>
+            <FaXTwitter size={25} color='ffffff'/>
+            <FaYoutube size={25} color='FFffff'/>
+            <FaFacebookF size={25} color='ffffff'/>
 
           </div>
 
         </div>
 
-        <div>
+        {/* second section's Secound section */}
+        
+        <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
+
+          <h1 className='font-bold text-lg'>Destinatins</h1>
+          <ul className='flex flex-col justify-center items-start gap-3 '>
+
+            {destination.map((items, index) =>
+              <li className='list-inside list-disc hover:text-[#817d7d] cursor-pointer' key={index}>{items}</li>
+            )}
+
+          </ul>
 
         </div>
 
