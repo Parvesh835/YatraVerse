@@ -15,6 +15,12 @@ const Footer = () => {
 
   const destination = ["Himachal Pardesh", "Uttarakhand", "Kashmir", "Ladakh", "Northeast India", "More Destinations"];
 
+  const experiences = ["Adventure Tours", "Cultural Tours", "Family Tours", "Honeymoon Packages", "Weekend Getaways", "Pilgrimage Tours",];
+  
+  const company = ["About Us", "Our Story", "Careers", "Blogs", "Media & press", "Contact Us"]
+
+  const support =["Help Center", "FAQs", "Booking Guide", "Terms & Conditions", "Privacy Policy", "Refund Policy"]
+
   return (
     <div
       className=' relative flex flex-col justify-center items-center gap-10   bg-[#06233d]/90'
@@ -54,10 +60,12 @@ const Footer = () => {
 
       </div>
 
+      {/* horizontal line */}
+      
       <hr className='h-2 w-350 text-[#8FA3B4]'/>
       
       {/* Second Section */}
-      <div className='flex justify-between items-center gap-10'>
+      <div className='flex justify-between items-center gap-25'>
 
         {/* second section's First section */}
         <div className='flex flex-col justify-between items-center gap-3 w-60 '>
@@ -95,13 +103,56 @@ const Footer = () => {
 
         </div>
 
-        <div></div>
+        {/* second section's Thrid section */}
+        
 
-        <div></div>
+        <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
 
-        <div></div>
+          <h1 className='font-bold text-lg'>Experiences</h1>
+          <ul className='flex flex-col justify-center items-start gap-3 '>
+
+            {experiences.map((items, index) =>
+              <li className='list-inside list-disc hover:text-[#817d7d] cursor-pointer' key={index}>{items}</li>
+            )}
+
+          </ul>
+
+        </div>
+
+        {/* second section's fourth section */}
+
+        <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
+
+          <h1 className='font-bold text-lg'>Company</h1>
+          <ul className='flex flex-col justify-center items-start gap-3 '>
+
+            {company.map((items, index) =>
+              <li className='list-inside list-disc hover:text-[#817d7d] cursor-pointer' key={index}>{items}</li>
+            )}
+
+          </ul>
+
+        </div>
+
+        
+        <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
+
+          <h1 className='font-bold text-lg'>Support</h1>
+          <ul className='flex flex-col justify-center items-start gap-3 '>
+
+            {support.map((items, index) =>
+              <li className='list-inside list-disc hover:text-[#817d7d] cursor-pointer' key={index}>{items}</li>
+            )}
+
+          </ul>
+
+        </div>
 
       </div>
+
+      {/* horizontal line */}
+      <hr className='h-2 w-350 text-[#8FA3B4]'/>
+
 
 
       <div></div>
