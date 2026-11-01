@@ -1,11 +1,14 @@
 import React from 'react'
-import bgImage from '../assets/footerBg.png';
-import { CiMail } from "react-icons/ci";
+import { CiMail, CiStar  } from "react-icons/ci";
 import { PiTelegramLogo } from "react-icons/pi";
 import logo from '../assets/YatraVerse_Logo.png'
 import { IoLogoInstagram } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube, FaFacebookF } from "react-icons/fa";
+import { MdSecurity } from "react-icons/md";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import sumAndMountain from "../assets/Mountains_and_sun.png";
+
 
 
 
@@ -23,7 +26,7 @@ const Footer = () => {
 
   return (
     <div
-      className=' relative flex flex-col justify-center items-center gap-10   bg-[#06233d]/90'
+      className=' relative flex flex-col justify-center items-center gap-10   bg-[#06233d]/90 pt-5' 
      >
     
   
@@ -65,7 +68,7 @@ const Footer = () => {
       <hr className='h-2 w-350 text-[#8FA3B4]'/>
       
       {/* Second Section */}
-      <div className='flex justify-between items-center gap-25'>
+      <div className='flex justify-between items-center gap-30 pb-5'>
 
         {/* second section's First section */}
         <div className='flex flex-col justify-between items-center gap-3 w-60 '>
@@ -77,12 +80,12 @@ const Footer = () => {
 
           <p className='text-center text-white'>Explore the world with us. Discover breathtaking destinations, unforgettable experiences and memories that last a lifetime.</p>
 
-          <div className='flex justify-between items-center gap-3'>
+          <div className='flex justify-between items-center gap-5'>
 
-            <IoLogoInstagram size={25} color='ffffff'/>
-            <FaXTwitter size={25} color='ffffff'/>
-            <FaYoutube size={25} color='FFffff'/>
-            <FaFacebookF size={25} color='ffffff'/>
+            <IoLogoInstagram size={35} color='ffffff' className='cursor-pointer rounded-full border-1 border-white p-1'/>
+            <FaXTwitter size={35} color='ffffff' className='cursor-pointer rounded-full border-1 border-white p-1'/>
+            <FaYoutube size={35} color='FFffff' className='cursor-pointer rounded-full border-1 border-white p-1'/>
+            <FaFacebookF size={35} color='ffffff' className='cursor-pointer rounded-full border-1 border-white p-1'/>
 
           </div>
 
@@ -104,8 +107,6 @@ const Footer = () => {
         </div>
 
         {/* second section's Thrid section */}
-        
-
         <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
 
           <h1 className='font-bold text-lg'>Experiences</h1>
@@ -120,7 +121,6 @@ const Footer = () => {
         </div>
 
         {/* second section's fourth section */}
-
         <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
 
           <h1 className='font-bold text-lg'>Company</h1>
@@ -134,7 +134,7 @@ const Footer = () => {
 
         </div>
 
-        
+        {/* second section's fifth section */}
         <div className='flex flex-col justify-center items-start gap-3 text-white font-mono'>
 
           <h1 className='font-bold text-lg'>Support</h1>
@@ -153,9 +153,39 @@ const Footer = () => {
       {/* horizontal line */}
       <hr className='h-2 w-350 text-[#8FA3B4]'/>
 
+      {/* Third Section */}
+      <div className='flex justify-between items-center gap-85'>
 
+        <div className='flex flex-rows gap-2 justify-between items-center '>
+          <MdSecurity size={25} color='ffffff' />
+          <p className='text-lg text-white'>100% Secure Booking</p>
+        </div>
 
-      <div></div>
+        <div className='flex flex-rows gap-2 justify-between items-center '>
+          <RiCustomerService2Fill size={25} color='ffffff' />
+          <p className='text-lg text-white'>24/7 Customer support</p>
+        </div>
+
+        <div className='flex flex-rows gap-2 justify-between items-center '>
+          <CiStar size={25} color='ffffff' />
+          <p className='text-lg text-white'>Best Price Guarantee</p>
+        </div>
+        
+      </div>
+
+      <hr className='h-2 w-350 text-[#8FA3B4]' />
+      
+      {/* Fourth Section */}
+      <div className='flex justify-between gap-140 items-center text-white pb-5'>
+
+        <p>© 2026 YatraVerse. All rights reserved.</p>
+
+        <div className='flex justify-between items-center gap-1'>
+          <img src={sumAndMountain} alt="" className='w-35' />
+          <p className='font-fontFamily text-3xl text-[#8FA3B4]'>Journey Beyond The Ordinary.</p>
+        </div>
+
+      </div>
 
     </div>
   )
