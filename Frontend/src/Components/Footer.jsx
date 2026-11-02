@@ -32,19 +32,19 @@ const Footer = () => {
   
       {/* first section */}
       
-      <div className='flex justify-between items-center my-5 gap-40 '>
+      <div className='flex max-md:flex-col justify-between items-center my-5 gap-40 '>
 
-        <div className='flex justify-between items-center gap-5'>
+        <div className='flex  justify-between items-center gap-5 max-md:gap-2 max-md:mx-10'>
 
         {/* email logo */}
-        <div className='rounded-full bg-[#06233d]/80 p-3'>
+        <div className='rounded-full bg-[#06233d]/80 p-3 '>
           <CiMail size={25} color="#ffffff"/>
         </div>
 
         {/* some text */}
         <div className='flex flex-col justify-start text-start items-start gap-2 text-white'>
-          <h1 className='text-2xl'>Saty Updated with YartraVerse</h1>
-          <p className='text-xl'>Subscribe to get exclusive travel deals, tips and inspiration straight to your inbox.</p>
+          <h1 className='text-2xl font-bold max-md:text-xl'>Saty Updated with YartraVerse</h1>
+          <p className='text-xl max-md:text-lg max-md:w-90'>Subscribe to get exclusive travel deals, tips and inspiration straight to your inbox.</p>
           </div>
         </div>
 
@@ -65,10 +65,10 @@ const Footer = () => {
 
       {/* horizontal line */}
       
-      <hr className='h-2 w-350 text-[#8FA3B4]'/>
+      <hr className='h-2 w-350 max-md:w-screen text-[#8FA3B4]'/>
       
       {/* Second Section */}
-      <div className='flex justify-between items-center gap-30 pb-5'>
+      <div className='flex justify-between items-center gap-30 pb-5 max-md:grid max-md:grid-cols-2 max-md:gap-20  max-md:mx-10'>
 
         {/* second section's First section */}
         <div className='flex flex-col justify-between items-center gap-3 w-60 '>
@@ -151,10 +151,10 @@ const Footer = () => {
       </div>
 
       {/* horizontal line */}
-      <hr className='h-2 w-350 text-[#8FA3B4]'/>
+      <hr className='h-2 w-350 max-md:w-screen text-[#8FA3B4]'/>
 
       {/* Third Section */}
-      <div className='flex justify-between items-center gap-85'>
+      <div className='flex justify-between items-center gap-85 max-md:gap-10 max-md:flex-col max-md:justify-center max-md:items-center pb-5'>
 
         <div className='flex flex-rows gap-2 justify-between items-center '>
           <MdSecurity size={25} color='ffffff' />
@@ -173,10 +173,10 @@ const Footer = () => {
         
       </div>
 
-      <hr className='h-2 w-350 text-[#8FA3B4]' />
+      <hr className='h-2 w-350 max-md:w-screen text-[#8FA3B4]' />
       
       {/* Fourth Section */}
-      <div className='flex justify-between gap-140 items-center text-white pb-5'>
+      <div className='flex justify-between gap-140 items-center text-white pb-5 max-md:flex-col max-md:gap-10 max-md:justify-center max-md:items-center'>
 
         <p>© 2026 YatraVerse. All rights reserved.</p>
 
