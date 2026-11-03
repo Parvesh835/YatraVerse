@@ -153,20 +153,21 @@ const Home = () => {
 
       </div>
 
+      {/* plan you escape */}
       <div className="flex px-20 pb-20 items-center justify-center bg-right"      >
-        <div className="h-25 bg-gradient-to-r from-[#153c65]/95 via-[#525E6B] to-[#AoB4CO] rounded-3xl w-full flex  justify-start items-center px-5 gap-5 bg-right "        >
+        <div className="h-25 max-md:h-30 bg-gradient-to-r from-[#153c65]/95 via-[#525E6B] to-[#AoB4CO] rounded-3xl w-full max-md:w-[750px] flex  justify-start items-center px-5 gap-5 bg-right "        >
           <div>
-            <img src={sumAndMountain} className="h-25" />
+            <img src={sumAndMountain} className="h-25 max-md:h-20" />
           </div>
-          <div className="flex flex-col justify-center  items-start gap-2">
-          <h1 className="text-xl text-white font-fontFamily">Your next story is waiting.</h1>
-            <p className="text-sm text-white font-fontFamily">Let the mountains, river and temples call you away.</p>
+          <div className="flex flex-col justify-center max-md:flex-row  items-start gap-2 ">
+          <h1 className="text-xl text-white font-fontFamily max-md:text-base">Your next story is waiting.</h1>
+            <p className="text-sm max-md:text-xs text-white font-fontFamily">Let the mountains, river and temples call you away.</p>
           </div>
           <div>
             <button className=" rounded-xl bg-[#3B82F6] px-3 py-1.5 ml-100 text-white cursor-pointer hover:scale-101">Plan your escape</button>
           </div>
           <div>
-            <img src={montainsAndForest} alt="" className="h-40 mr-0 my-0 pr-0 py-0" />
+            <img src={montainsAndForest} alt="" className="h-40 mr-0 my-0 pr-0 py-0 max-md:hidden" />
           </div>
 
         </div>
