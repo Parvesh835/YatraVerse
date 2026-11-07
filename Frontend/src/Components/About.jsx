@@ -2,8 +2,37 @@ import React from 'react'
 import bgImage from '../assets/aboutbg.png';
 import AboutImg1 from '../assets/aboutImg1.png';
 import { TiLocationArrow } from "react-icons/ti";
+import { FaRegCompass, FaHeart  } from "react-icons/fa";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { RiCustomerService2Fill } from "react-icons/ri";
+
+
 
 const About = () => {
+
+  const infos = [
+    {
+      icon: FaRegCompass,
+      heading: "Handpicked Experiences",
+      details: "Curated destinations and activites chosen with love and local expertise."
+    },
+    {
+      icon: IoShieldCheckmarkOutline,
+      heading: "Trusted & Secure",
+      details: "Your safety abd comfort are our top priorties, every step of the way."
+    },
+    {
+      icon: RiCustomerService2Fill,
+      heading: "24/7 Support",
+      details: "We're here for you anytime, anywhere before, during and after you trip."
+    },
+    {
+      icon: FaHeart,
+      heading: "Travel with Purpose ",
+      details: "We promote sutinable tourism and sport local communities wherever we go."
+    },
+  ]
+
   return (
   <div className='bg-[#F2EDE5] flex flex-col justify-center items-center'>
 
@@ -49,9 +78,22 @@ const About = () => {
         </div>
       </div>
       
-      <div></div>
-    </div>
-</div>
+      <div className='flex justify-centre items-start gap-10 bg-[#3B82F6]/10 w-full  rounded-2xl p-10'>
+        {
+          infos.map((iteams, index) =>
+            <div key={index} className=' text-center flex flex-col gap-3 items-center'>
+            
+              <div className='w-20 h-20 rounded-full bg-[#3B82F6]/40 flex justify-center items-center'>
+                  <iteams.icon size={40} color='#3B82F6' />
+              </div>
+              <h1 className='text-2xl'>{iteams.heading}</h1>
+              <p className='text-lg text-[#6B7280]'>{iteams.details}</p>
+            </div>
+          )}
+          </div>
+      </div>
+  </div>
+
 
 )
 }
