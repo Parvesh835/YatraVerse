@@ -6,9 +6,12 @@ import { FaRegCompass, FaHeart  } from "react-icons/fa";
 import { IoShieldCheckmarkOutline, IoLocationOutline } from "react-icons/io5";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import About_Thridsectionbg from '../assets/About_Thridsectionbg.png'
-import { IoIosPeople } from "react-icons/io";
+import { IoIosPeople , IoIosArrowRoundForward } from "react-icons/io";
 import { MdBusinessCenter } from "react-icons/md";
 import { CiStar } from "react-icons/ci";
+import About4section from "../assets/About4section.png"
+import { LiaTelegram } from "react-icons/lia";
+
 
 const About = () => {
 
@@ -130,7 +133,7 @@ const About = () => {
         
         {
           thridInfo.map((items, index) =>
-            <div className='flex flex-col justify-center items-center text-white gap-3 py-10 text-center '
+            <div key={index} className='flex flex-col justify-center items-center text-white gap-3 py-10 text-center '
             >
               <items.logo size={50} color='ffffff' />
               <h1 className='text-4xl'>{items.heading}</h1>
@@ -139,6 +142,38 @@ const About = () => {
             </div>
           )
           }
+      </div>
+      {/* Fourth Section */}
+      <div className='flex flex-col gap-10 justify-center items-center'>
+        <div className='flex items-center justify-center text-start py-10 px-20 gap-10'>
+          <div className='flex flex-col items-start justify-center gap-2 w-1/2'>
+            <h3 className='text-2xl font-semibold text-[#3B82F6]'>OUR MISSION</h3>
+            <h1 className='text-5xl font-bold pb-2'>To Make Every Jouney Extraordinary</h1>
+            <p className='text-xl  text-[#6B7280]'>Our mission is simple - to inspire people to more, worry less and live fully. We're committed to providing authentic travel experiences thet leave a positive impact on both travelers and the places we visit.</p>
+            <button className='relative z-10 text-[#3B82F6] border-[#3B82F6] border-2 mt-8 test-xl py-2 px-4 rounded hover:text-[#3B82F6]/90 hover:scale-105 transition duration-300'>
+        <div className="flex items-center justify-center gap-2">
+           Explore Packages
+         <TiLocationArrow size={20} />
+        </div>
+      </button>
+          </div>
+          <div>
+            <img src={About4section} alt="image" className='rounded-xl w-170' />
+          </div>
+        </div>
+        <div className=' bg-[#3B82F6]/10 flex justify-center items-center gap-3 h-40 rounded-2xl mb-2'>
+          <div className='bg-[#3B82F6]/40 ml-50 w-20 h-20 rounded-full flex justify-center items-center  '><LiaTelegram size={40} color='3B82F6' /></div>
+          <div className='flex flex-col justify-start items-strat gap-2'>
+            <h1 className='font-semibold text-xl'>Ready to start your next adventure?</h1>
+            <p className='text-[#6B7280]'>Let YartraVerse help you plan the journey of a lifetime.</p>
+          </div>
+          <button className='relative z-10 ml-30 mr-50 mt-8 test-xl py-2 px-4 rounded bg-[#3B82F6] hover:bg-[#3B82F6]/70 hover:scale-105 transition duration-300'>
+          <div className="flex items-center justify-center gap-2">
+           Explore Packages
+          <IoIosArrowRoundForward size={20} color='ffffff' />
+        </div>
+      </button>
+        </div>
       </div>
   </div>
   
