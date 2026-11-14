@@ -78,15 +78,15 @@ const About = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-[#071E3D]/90 via-[#0B3D70]/65 to-transparent"></div>
 
       {/* Hero Content */}
-      <h1 className='relative z-10 text-5xl font-bold'>
+      <h1 className='relative z-10 text-5xl font-bold max-md:text-3xl'>
         About YatraVerse
       </h1>
 
-      <h3 className='relative z-10 text-2xl'>
+      <h3 className='relative z-10 text-2xl max-md:text-lg'>
         Crafting journeys that stay with you forever.
       </h3>
 
-      <p className='relative z-10 w-90'>
+      <p className='relative z-10 w-90 max-md:text-xs'>
         At YatraVerse, we believe travel is more than just visiting places.
         It's about discovering new perspectives, creating unforgettable
         memories and connecting with the world in meaningful ways.
@@ -102,7 +102,7 @@ const About = () => {
     </div>
     {/*Second Section  */}
     <div className='bg-white flex flex-col justify-center w-full items-start gap-10 px-30 py-10'>
-      <div className='flex justify-center iteam-start gap-10'>
+      <div className='flex justify-center iteam-start gap-10 max-md:flex-col'>
         <img src={AboutImg1} alt='Hiking Image ' className='w-150 rounded-2xl'/>
         <div className='flex flex-col justify-start items-start gap-3 pl-3'>
           <h3 className='text-[#3B82F6] font-semibold'>OUR STORY</h3>
@@ -112,7 +112,7 @@ const About = () => {
         </div>
       </div>
       
-      <div className='flex justify-centre items-start gap-10 bg-[#3B82F6]/10 w-full  rounded-2xl p-10'>
+      <div className='flex justify-centre items-start gap-10 bg-[#3B82F6]/10 w-full  rounded-2xl p-10 max-md:flex-col'>
         {
           infos.map((iteams, index) =>
             <div key={index} className=' text-center flex flex-col gap-3 items-center'>
