@@ -106,9 +106,9 @@ const About = () => {
         <img src={AboutImg1} alt='Hiking Image ' className='w-150 rounded-2xl'/>
         <div className='flex flex-col justify-start items-start gap-3 pl-3'>
           <h3 className='text-[#3B82F6] font-semibold'>OUR STORY</h3>
-          <h1 className='text-5xl font-semibold'>Turing Wanderlust into Meaniningful journeys</h1>
-          <p className='text-lg text-[#6B7280] text-justify pb-3'>YatarVerse was born out of passion for exploration and a desire to make travel seamless, personalized and accessible for everyone. From breathtaking monutaons to serene beaches, from culture trails to thrilling advantures - we bring the world closer to you.</p>
-          <p className='text-lg text-[#6B7280] text-justify'>Every itinerary we design is filled with experiences that inspire, connect and create stories you'll cherish for a lifetime.</p>
+          <h1 className='text-5xl font-semibold max-md:text-3xl'>Turing Wanderlust into Meaniningful journeys</h1>
+          <p className='text-lg text-[#6B7280] text-justify pb-3 max-md:text-sm'>YatarVerse was born out of passion for exploration and a desire to make travel seamless, personalized and accessible for everyone. From breathtaking monutaons to serene beaches, from culture trails to thrilling advantures - we bring the world closer to you.</p>
+          <p className='text-lg text-[#6B7280] text-justify max-md:text-sm'>Every itinerary we design is filled with experiences that inspire, connect and create stories you'll cherish for a lifetime.</p>
         </div>
       </div>
       
@@ -120,14 +120,14 @@ const About = () => {
               <div className='w-20 h-20 rounded-full bg-[#3B82F6]/40 flex justify-center items-center'>
                   <iteams.icon size={40} color='#3B82F6' />
               </div>
-              <h1 className='text-2xl'>{iteams.heading}</h1>
-              <p className='text-lg text-[#6B7280]'>{iteams.details}</p>
+              <h1 className='text-2xl max-md:text-base'>{iteams.heading}</h1>
+              <p className='text-lg text-[#6B7280] max-md:text-sm'>{iteams.details}</p>
             </div>
           )}
           </div>
       </div>
       {/* Thrid Section */}
-      <div className='flex flex-row  items-center justify-center gap-30 bg-center bg-no-repeat bg-cover w-full '
+      <div className='flex flex-row  items-center justify-center gap-30 bg-center bg-no-repeat bg-cover w-full max-md:flex-col max-md:gap-10 '
         style={{ backgroundImage: `linear-gradient(to right, rgba(17,24,39,0.9), rgba(107,114,128,0.6)), url(${About_Thridsectionbg})` }}>
         
         
