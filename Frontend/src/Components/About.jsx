@@ -145,23 +145,23 @@ const About = () => {
       </div>
       {/* Fourth Section */}
       <div className='flex flex-col gap-10 justify-center items-center'>
-        <div className='flex items-center justify-center text-start py-10 px-20 gap-10'>
+        <div className='flex items-center justify-center text-start py-10 px-20 gap-10 max-md:flex-col'>
           <div className='flex flex-col items-start justify-center gap-2 w-1/2'>
-            <h3 className='text-2xl font-semibold text-[#3B82F6]'>OUR MISSION</h3>
-            <h1 className='text-5xl font-bold pb-2'>To Make Every Jouney Extraordinary</h1>
-            <p className='text-xl  text-[#6B7280]'>Our mission is simple - to inspire people to more, worry less and live fully. We're committed to providing authentic travel experiences thet leave a positive impact on both travelers and the places we visit.</p>
+            <h3 className='text-2xl font-semibold text-[#3B82F6] max-md:text-lg'>OUR MISSION</h3>
+            <h1 className='text-5xl font-bold pb-2 max-md:text-3xl'>To Make Every Jouney Extraordinary</h1>
+            <p className='text-xl  text-[#6B7280] max-md:text-sm'>Our mission is simple - to inspire people to more, worry less and live fully. We're committed to providing authentic travel experiences thet leave a positive impact on both travelers and the places we visit.</p>
             <button className='relative z-10 text-[#3B82F6] border-[#3B82F6] border-2 mt-8 test-xl py-2 px-4 rounded hover:text-[#3B82F6]/90 hover:scale-105 transition duration-300'>
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-2 max-md:text-sm">
            Explore Packages
          <TiLocationArrow size={20} />
         </div>
       </button>
           </div>
           <div>
-            <img src={About4section} alt="image" className='rounded-xl w-170' />
+            <img src={About4section} alt="image" className='rounded-xl w-170 max-md:w-120' />
           </div>
         </div>
-        <div className=' bg-[#3B82F6]/10 flex justify-center items-center gap-3 h-40 rounded-2xl mb-2'>
+        <div className=' bg-[#3B82F6]/10 flex justify-center items-center gap-3 h-40 rounded-2xl mb-2 max-md:hidden'>
           <div className='bg-[#3B82F6]/40 ml-50 w-20 h-20 rounded-full flex justify-center items-center  '><LiaTelegram size={40} color='3B82F6' /></div>
           <div className='flex flex-col justify-start items-strat gap-2'>
             <h1 className='font-semibold text-xl'>Ready to start your next adventure?</h1>
