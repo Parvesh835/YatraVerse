@@ -1,6 +1,117 @@
 import React from 'react'
 import bgimage from '../assets/kasol.png'
+
+
 const Packages = () => {
+  const packagess = [
+    {
+      place: "Dharamsala",
+      time: "2 Days and 3 Nights",
+      date: "From 21-02-2027 t0 23-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhanTjMlaSnWOQp1r1p601yqOn2l3vYDenG13PEEPNrxev7Cdl4c3Qaw&s=10"
+    },
+    {
+      place: "karei Lake",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c9e87d931.webp"
+    },
+    {
+      place: "Kugti",
+      time: "3 Days and 2 Nights",
+      date: "From 12-02-2027 t0 15-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wXa_eNfLRunG0rioktXPnEl4knbHMtEI1nwyDqqkHw&s=10"
+    },
+    {
+      place: "Manali",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://hirehimachalcab.com/blogs/wp-content/uploads/2026/06/places-to-visit-in-manali-1024x683.png"
+    },
+    {
+      place: "Dharamsala",
+      time: "2 Days and 3 Nights",
+      date: "From 21-02-2027 t0 23-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhanTjMlaSnWOQp1r1p601yqOn2l3vYDenG13PEEPNrxev7Cdl4c3Qaw&s=10"
+
+    },
+    {
+      place: "karei Lake",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c9e87d931.webp"
+
+    },
+    {
+      place: "Kugti",
+      time: "3 Days and 2 Nights",
+      date: "From 12-02-2027 t0 15-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wXa_eNfLRunG0rioktXPnEl4knbHMtEI1nwyDqqkHw&s=10"
+
+    },
+    {
+      place: "Manali",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://hirehimachalcab.com/blogs/wp-content/uploads/2026/06/places-to-visit-in-manali-1024x683.png"
+
+    },
+    {
+      place: "Dharamsala",
+      time: "2 Days and 3 Nights",
+      date: "From 21-02-2027 t0 23-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhanTjMlaSnWOQp1r1p601yqOn2l3vYDenG13PEEPNrxev7Cdl4c3Qaw&s=10"
+
+    },
+    {
+      place: "karei Lake",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c9e87d931.webp"
+
+    },
+    {
+      place: "Kugti",
+      time: "3 Days and 2 Nights",
+      date: "From 12-02-2027 t0 15-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wXa_eNfLRunG0rioktXPnEl4knbHMtEI1nwyDqqkHw&s=10"
+
+    },
+    {
+      place: "Manali",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://hirehimachalcab.com/blogs/wp-content/uploads/2026/06/places-to-visit-in-manali-1024x683.png"
+
+    },
+    {
+      place: "Dharamsala",
+      time: "2 Days and 3 Nights",
+      date: "From 21-02-2027 t0 23-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJhanTjMlaSnWOQp1r1p601yqOn2l3vYDenG13PEEPNrxev7Cdl4c3Qaw&s=10"
+
+    },
+    {
+      place: "karei Lake",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://himalayanhikers.in/root-admin-laravel-panel/uploads/trek_images/68c9c9e87d931.webp"
+
+    },
+    {
+      place: "Kugti",
+      time: "3 Days and 2 Nights",
+      date: "From 12-02-2027 t0 15-02-2027",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wXa_eNfLRunG0rioktXPnEl4knbHMtEI1nwyDqqkHw&s=10"
+    },
+    {
+      place: "Manali",
+      time: "2 Days and 1 Nights",
+      date: "From 19-01-2027 t0 21-01-2027",
+      img: "https://hirehimachalcab.com/blogs/wp-content/uploads/2026/06/places-to-visit-in-manali-1024x683.png"
+
+    }
+  ]
   return (
     <div className='flex flex-col justify-center items-center'>
         <div className='text-start px-40 bg-center bg-cover bg-no-repeat w-full py-40 rounded-b-2xl'
@@ -16,7 +127,18 @@ const Packages = () => {
         <div className='bg-gray-200 text-[#3B82F6] hover:text-[#3B82F6]/80 hover:bg-gray-200/30 border-2 flex items-center justify-center rounded-3xl px-4 py-2' >Adventurous</div>
         <div className='bg-gray-200 text-[#3B82F6] hover:text-[#3B82F6]/80 hover:bg-gray-200/30 border-2 flex items-center justify-center rounded-3xl px-4 py-2' >Cultural</div>
         <div className='bg-gray-200 text-[#3B82F6] hover:text-[#3B82F6]/80 hover:bg-gray-200/30 border-2 flex items-center justify-center rounded-3xl px-4 py-2' >Luxury</div>
-        
+      </div>
+      <div className='grid grid-cols-max gap-4"'>
+        {
+          packagess.map((iteams, index) =>
+            <div key={index} className='w-70 rounded-2xl bg-gray-100 flex flex-col items-center justify-center  '>
+              <img src={iteams.img} className='w-full h-70 rounded-t-2xl' />
+              <h1>{iteams.place}</h1>
+              <h3>{iteams.date}</h3>
+              <p>{iteams.time}</p>
+            </div>
+          )
+        }
       </div>
     </div>
   )
