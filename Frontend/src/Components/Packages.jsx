@@ -128,14 +128,18 @@ const Packages = () => {
         <div className='bg-gray-200 text-[#3B82F6] hover:text-[#3B82F6]/80 hover:bg-gray-200/30 border-2 flex items-center justify-center rounded-3xl px-4 py-2' >Cultural</div>
         <div className='bg-gray-200 text-[#3B82F6] hover:text-[#3B82F6]/80 hover:bg-gray-200/30 border-2 flex items-center justify-center rounded-3xl px-4 py-2' >Luxury</div>
       </div>
-      <div className='grid grid-cols-max gap-4"'>
+      <div className='grid grid-cols-4 gap-10 px-10 py-10'>
         {
           packagess.map((iteams, index) =>
-            <div key={index} className='w-70 rounded-2xl bg-gray-100 flex flex-col items-center justify-center  '>
+            <div key={index} className='w-80 rounded-2xl bg-gray-100 flex flex-col items-start justify-center hover:scale-105 transition-all  '>
               <img src={iteams.img} className='w-full h-70 rounded-t-2xl' />
-              <h1>{iteams.place}</h1>
-              <h3>{iteams.date}</h3>
-              <p>{iteams.time}</p>
+              <div className='flex  items-center justify-center py-4'>
+                <div className='flex flex-col items-start justify-center'>
+                  <h1 className='text-xl font-bold  px-2'>{iteams.place}</h1>
+                  <p className=' text-gray-500 px-2'>{iteams.time}</p>
+                </div>
+                <button className='bg-[#3B82F6] text-white px-4 py-2 rounded-2xl ml-10 hover:bg-[#3B82F6]/80 transition-all cursor-pointer'>Book Now</button>
+              </div>
             </div>
           )
         }
