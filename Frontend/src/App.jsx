@@ -19,6 +19,9 @@ const App = () => {
         {path: '/login', element: <Login/>},
         {path: '/packages', element: <Packages/>},
       ]
+    },
+    {
+      path: "/admin",
     }
   ])
   return (
