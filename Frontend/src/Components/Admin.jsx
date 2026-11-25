@@ -1,10 +1,10 @@
 import React from 'react'
-import Admin_Header from './Admin_Header'
 
 const Admin = () => {
   return (
     <div>
-      <Admin_Header />
+      <header>Wellcome back, Admin</header>
+      
     </div>
   )
 }
